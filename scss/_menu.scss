@@ -4,14 +4,14 @@
     right: 35px;
     top: 35px;
     cursor: pointer;
-    @include easeOut();
+    @include easeOut;
 
     .btn-line {
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
-        @include easeOut();
+        background:set-text-color($primary_color);
+        @include easeOut;
     }
 
     //Rotate X with Menu Lines
@@ -91,10 +91,11 @@
         .portrait {
             width: 250px;
             height: 250px;
-            background: url('../img/ismoil.png');
+            background: url('../img/portrait.jpg');
             border-radius: 50%;
             border: 3px solid $secondary_color;
             background-size: cover;
+
         }
         .nav-item {
             transform: translate3d(600px, 0, 0);
@@ -118,7 +119,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: #fff;
+        color: set-text-color($primary_color);
         text-decoration: none;
         @include easeOut;
 
